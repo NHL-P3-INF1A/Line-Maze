@@ -1,25 +1,29 @@
-void turnSignalLeftOn() {
+void turnSignalLeftOn()
+{
   // Turn signal on
   pixels.setPixelColor(0, pixels.Color(70, 255, 0)); // Orange color
   pixels.setPixelColor(3, pixels.Color(70, 255, 0)); // Orange color
   pixels.show();
 }
 
-void turnSignalLeftOff(){
+void turnSignalLeftOff()
+{
   pixels.setPixelColor(0, pixels.Color(0, 0, 0)); // Orange color
   pixels.setPixelColor(3, pixels.Color(0, 0, 0)); // Orange color
   pixels.show();
   frontLights();
 }
 
-void turnSignalRightOn() {
+void turnSignalRightOn()
+{
   // Turn signal on
   pixels.setPixelColor(1, pixels.Color(70, 255, 0)); // Orange color
   pixels.setPixelColor(2, pixels.Color(70, 255, 0)); // Orange color
   pixels.show();
 }
 
-void turnSignalRightOff() {
+void turnSignalRightOff()
+{
   // Turn signal on
   pixels.setPixelColor(1, pixels.Color(0, 0, 0)); // Orange color
   pixels.setPixelColor(2, pixels.Color(0, 0, 0)); // Orange color
@@ -27,37 +31,43 @@ void turnSignalRightOff() {
   frontLights();
 }
 
-void brakeSignalOn() {
+void brakeSignalOn()
+{
   // Turn signal on
   pixels.setPixelColor(0, pixels.Color(0, 255, 0)); // Orange color
   pixels.setPixelColor(1, pixels.Color(0, 255, 0)); // Orange color
   pixels.show();
 }
-void brakeSignalOff() {
+void brakeSignalOff()
+{
   // Turn signal on
   pixels.setPixelColor(0, pixels.Color(0, 0, 0)); // Orange color
   pixels.setPixelColor(1, pixels.Color(0, 0, 0)); // Orange color
   pixels.show();
 }
 
-void frontLights(){
+void frontLights()
+{
   pixels.setPixelColor(3, pixels.Color(255, 255, 255)); // Orange color
   pixels.setPixelColor(2, pixels.Color(255, 255, 255)); // Orange color
   pixels.show();
 }
 
-void reverseSignalOn(){
-    pixels.setPixelColor(0, pixels.Color(255, 255, 255)); // Orange color
-    pixels.show();
+void reverseSignalOn()
+{
+  pixels.setPixelColor(0, pixels.Color(255, 255, 255)); // Orange color
+  pixels.show();
 }
 
-void reverseSignalOff(){
-    pixels.setPixelColor(0, pixels.Color(0, 0, 0)); // Orange color
-    pixels.show();
+void reverseSignalOff()
+{
+  pixels.setPixelColor(0, pixels.Color(0, 0, 0)); // Orange color
+  pixels.show();
 }
 
-void frontLightsOff(){
-    pixels.setPixelColor(3, pixels.Color(0, 0, 0)); // Orange color
+void frontLightsOff()
+{
+  pixels.setPixelColor(3, pixels.Color(0, 0, 0)); // Orange color
   pixels.setPixelColor(2, pixels.Color(0, 0, 0)); // Orange color
   pixels.show();
 }

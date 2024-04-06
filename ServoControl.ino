@@ -1,11 +1,16 @@
-void gripperToggle() {
+void gripperToggle()
+{
   static unsigned long timer;
   static bool state;
-  if (millis() > timer) {
-    if (state == true) {
+  if (millis() > timer)
+  {
+    if (state == true)
+    {
       servo(GRIPPER_OPEN);
       state = false;
-    } else {
+    }
+    else
+    {
       servo(GRIPPER_CLOSED);
       state = true;
     }
@@ -13,15 +18,15 @@ void gripperToggle() {
   }
 }
 
-void servo(int pulse) 
+void servo(int pulse)
 {
   static unsigned long timer;
   static int pulse1;
-  if (pulse > 0) 
+  if (pulse > 0)
   {
     pulse1 = pulse;
   }
-  if (millis() > timer) 
+  if (millis() > timer)
   {
     digitalWrite(GRIPPER_PIN, HIGH);
     delayMicroseconds(pulse1);

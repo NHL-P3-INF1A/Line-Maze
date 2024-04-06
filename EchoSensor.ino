@@ -7,10 +7,5 @@ float getDistanceCM() {
 
   long duration = pulseIn(AFSTAND_ECHO, HIGH);
   float distance = duration * 0.034 / 2;
-
-  // Serial print the distance
-  // Serial.print("Distance: ");
-  // Serial.print(distance);
-  // Serial.println(" cm");
   return distance;
 }
